@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Playfair+Display&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<!--MainDiv-->
+    <div id="main-wrapper">
+
+<!--Nav-->
+ <nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/records.html">Gear List</a></li>
+        <li><a href="/tv.html">Television | Ads | Movies</a></li>
+        <li><a href="/touring.html">Touring | Live Events</a></li>
+        <li><a href="/educate.html">Education</a></li>
+        <li><a onclick="otherSiteMenu()" href="#">Other Sites</a></li>
+    </ul>
+    <ul id = "other-sites-menu">
+        <li><a href = "https://pjfmusic.com/musicislife/">PJF Music</a></li>
+        <li><a href = "http://theresidencestudios.com/integrity/">The Residence Studios</a></li>
+        <li><a href = "https://thepro-foolspodcast.com/nobozos/">The Pro-Fools Podcast</a></li>
+        <li><a href = "https://www.tracktomix.com/wp/">Track To Mix</a></li>
+            
+    </ul>
+ </nav>
+
+    <i onclick="miniMenuReveal()" id="menu-button" class="fas fa-ellipsis-h"></i>
+   
+
+ <div id="mini-menu">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/records.html">Gear List</a></li>
+        <li><a href="/tv.html">Television | Ads | Movies</a></li>
+        <li><a href="/touring.html">Touring | Live Events</a></li>
+        <li><a href="/educate.html">Education</a></li>
+            
+           
+            <ul class="other-sites-mini">
+                <li><a  href="#"><h2>Other Sites</h2></a></li>
+                <li><a href = "https://pjfmusic.com/musicislife/">PJF Music</a></li>
+                <li><a href = "http://theresidencestudios.com/integrity/">The Residence Studios</a></li>
+                <li><a href = "https://thepro-foolspodcast.com/nobozos/">The Pro-Fools Podcast</a></li>
+                <li><a href = "https://www.tracktomix.com/wp/">Track To Mix</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+
+    <!--ContentStart-->
+       <img id = "header-img" src="/image/studioboard.jpg">
+        <h1 id = "title-h1">Paul J Falcone</h1>
+        <i id="arrow-down" class="fas fa-chevron-down"></i>
+
+<!--ProfileContent-->
+    <div class="main-content">
+    <img id = "profile-img" src="/image/pjf-console.jpg">
+    <span id = "profile-type">
+        <h1>About Me</h1>
+        <p>
+            Paul J. Falcone is a producer, mixer, recording engineer and programmer with certified platinum, gold, Grammy-nominated and winning credits.  He has mixed and recorded projects for Michael Jackson, Missy Elliott, Luther Vandross, Maxwell, Queen Latifah, R.E.M., Iggy Azalea, Theophilius London ( feat. Kanye West ), Whitney Houston, R. Kelly, Tom Odell, Robin Thicke, Busta Rhymes, Nas, Jay-Z,  Anita Baker, A$AP Rocky and many many more.</br></br></br> As a producer and composer his work has been featured on albums, local and national television, feature films and the web.  He also works as a studio and acoustical consultant.  One of his latest passions is working to educate the latest generation of engineers and producers and share his vast knowledge of music, studio technique and workflow.  He hosts The Pro-Fools podcast available on all podcast platforms and YouTube to share his knowledge along with selected colleagues to bring real-world unbiased information to the masses.   He brings over two decades of experience in the music and recording industries.
+        </p>
+    </span>
+    </div> 
+
+<!--Footer w/ Contact Info-->
+<footer>
+   <div class = "contact-list-items"> 
+    <h2>Don’t Hesitate To Contact Me For Info</h2>
+       <ul >
+        <li><div class="contact-content"><span><i class="far fa-envelope-open"></i>  Email Me: pjfmusic@gmail.com</span></div></li>
+        <li><div class="contact-content"><span><i class="fas fa-phone-square"></i>   Phone: 646-898-7625</span></div></li>
+    </ul>
+</div>
+
+
+
+    <div class = "social-list-items">
+    
+        <h2>Follow Me</h2>
+        
+        <a href="https://www.linkedin.com/in/pauljfalcone/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/pjfmusic/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/pauljfalcone"><i class="fab fa-facebook-f"></i></a>
+        
+    </div>
+    <div id='footerbanner'></div>
+
+</footer>
+
+
+    </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,983 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth ;
+    background-color: rgba(0, 0, 0, 0.970);
+    color: white;
+    line-height: 1.5em;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+#main-wrapper {
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+}
+
+#title-h1 {
+    position: absolute;
+    top: 3em;
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 5em;
+    word-spacing: 18px;
+    letter-spacing: 7px;
+}
+#record-title-h1 {
+    
+    margin: 1.5em 0 1em 0;
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    font-size: 5em;
+    word-spacing: 18px;
+    letter-spacing: 7px;
+   
+}
+
+h1,h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+nav {
+    margin: 1.6em 0 2em 0;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+    transition: ease-in 1s;
+    font-size: 20px;
+ 
+    
+}
+
+.nav-1 {
+    margin: 0em 0 2em 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+    background-color: #131212;
+    width: 100%;
+    transition: ease-in 1s;
+    
+}
+
+
+nav li {
+    display: inline;
+    margin: 0em 1em 0em 1em;
+    
+    
+}
+
+nav a:hover {
+    color: rgba(116, 0, 170, 0.774) ;
+    transition: ease-in 300ms;
+    
+}
+
+
+
+
+#mini-menu {
+    display: none;
+    
+}
+
+#menu-button {
+    display: none;
+    
+}
+
+#other-sites-menu {
+    margin: 0;
+    padding: 0;
+    width: 20vw;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 45em;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 3%;
+    
+}
+
+
+#other-sites-menu li {
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+ 
+}
+
+#other-sites-menu li:hover {
+   
+    width: 100%;
+    background-color: rgba(166, 20, 233, 0.034);
+    transition: ease-in 300ms;
+   
+}
+
+
+
+
+.main-content {
+   display: flex;
+   flex-flow: row wrap ;
+   opacity: 0;
+   transform: translateY(150px);
+   
+}
+
+.main-content-show{
+    display: flex;
+    margin-bottom: 3em;
+   flex-flow: row wrap ;
+   opacity: 1;
+   transition: ease-in 900ms;
+   transform: translateY(0px);
+}
+
+#header-img {
+    
+    position: relative;
+    margin: 4.5em 0 1em 0;
+    width: 80vw;
+    max-height: 80vh;
+    opacity: .17;
+    
+}
+
+#arrow-down {
+   
+animation: animate 2s infinite;
+}
+
+@keyframes animate {
+   
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+/*add flashing effect via js*/
+
+#profile-img {
+    margin: 4em 4em 3em 8em;
+    width: 23%;
+  
+}
+
+#profile-type {
+    margin: 4em 8em 0em 8em;
+    max-width: 31em;
+}
+
+
+/*blogpost*/
+
+.main-blog-content {
+    margin:  2em 0 2em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 2em;
+
+  
+}
+
+.blog-post-descrip {
+    max-width: 23em;
+}
+
+.blog-post-img {
+    width: 100%;
+    height: 18em;
+   
+}
+
+
+.line {
+  
+  width: 6em;
+  height: 1px;
+  background-color: rgba(116, 0, 170, 0.774)
+}
+
+/*CSS FOR OTHER PAGES START HERE*/
+
+#tv-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/blur-bright-broadcast-broadcasting-668296.jpg);
+    background-attachment: fixed;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#record-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/jonathan-velasquez-c1ZN57GfDB0-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+/*ED*/
+
+#ed-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/marc-fanelli-isla-xo4ValczbuA-unsplash.jpg);
+    background-attachment: fixed;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.67);
+    background-blend-mode: overlay;
+
+}
+
+#ed-img-div {
+    width: 100%;
+    height: 400px;
+    margin: 1em 0 0em 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    line-height: 2em;
+    
+}
+
+.inside-info-text-ed-1 {
+    
+    width: auto;
+    height: 22em;
+
+    padding: 0 1em 2em 1em;
+    transition: ease-in 500ms;
+    background-image: url(/image/11374441_773031546176190_634272150_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: ease-out 1s;
+    
+  
+}
+
+#inside-info-text-ed-p1 {
+    width: 20em;
+    position: relative;
+    bottom: 16em;
+    left: 3em;
+    display: none;
+    z-index: -1;
+    
+}
+
+
+
+.inside-info-text-ed-2 {
+    
+    width: auto;
+    height: 22em;
+    padding: 0 1em 2em 1em;
+    transition: ease-in 500ms;
+    background-image: url(/image/71138886_562906007847717_6593147567894744673_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  
+}
+
+#inside-info-text-ed-p2 {
+    width: 20em;
+    position: relative;
+    bottom: 16em;
+    left: 3em;
+    display: none;
+    z-index: -1;
+    
+}
+
+
+.inside-info-text-ed-3 {
+    
+    width: auto;
+    height: 22em;
+    padding: 0 1em 2em 1em;
+    transition: ease-in 500ms;
+    background-image: url(/image/71198355_164284771311940_3645299418270562030_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  
+}
+
+#inside-info-text-ed-p3 {
+    width: 20em;
+    position: relative;
+    bottom: 16em;
+    left: 3em;
+    display: none;
+    z-index: -1;
+    
+}
+
+.inside-info-text-ed-1:hover{
+    width: auto;
+    height: 24em;
+    opacity: .2;
+    transition: ease-in 500ms;
+    
+    }
+
+.inside-info-text-ed-2:hover{
+    width: auto;
+    height: 24em;
+    opacity: .2;
+    transition: ease-in 500ms;
+    
+    }
+
+.inside-info-text-ed-3:hover{
+    width: auto;
+    height: 24em;
+    opacity: .2;
+    transition: ease-in 500ms;
+    
+    }
+
+#ed-img-div img{
+width: auto;
+height: 22em;
+padding: 0 1em 2em 1em;
+transition: ease-in 500ms;
+}
+
+    
+
+#touring-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg);
+    background-attachment: fixed;
+    background-position-y: 90vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#ad-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/aaron-sebastian-XWl8Pu3HrgY-unsplash.jpg);
+    background-attachment: fixed;
+    background-position-y: 90vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#tv-img-div img{
+    width: auto;
+    height: 20em;
+    padding: 3em 0 2em 0;
+    
+    
+    }
+
+
+.content-list ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.content-list li{
+ 
+    padding: 1em 0 1em 0;
+    
+    
+ }
+
+ .content-list p {
+    margin: 0 2em 0 2em;
+
+}
+ 
+
+.content-list li:nth-child(2n) {
+   background-color: rgba(85, 85, 85, 0.048);
+   
+   
+}
+
+#educate-wrapper {
+    margin: 8em 3em 2em 3em;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
+    grid-column-gap: 2em;
+    line-height: 2em;
+}
+
+
+
+#educate-wrapper li {
+    
+   list-style: disc;
+  }
+
+  .vl {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    border-left: 2px solid rgba(116, 0, 170, 0.774);
+    height: 100%;
+  }
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    position: relative;
+    
+    grid-template-columns: 1fr 1fr ;
+    background-color: rgba(0, 0, 0, 0.935);
+    background-image: url(/image/neil-godding-NMbZ7QM3XWM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+ 
+
+}
+
+
+.contact-list-items {
+    margin: 4em 2em 0 8em;
+    list-style: none;
+    text-align: left  ;
+    
+    
+}
+
+.contact-list-items i {
+   
+  color: rgba(116, 0, 170, 0.774);
+    
+}
+
+.contact-content {
+    margin: 1em 0 1em 0;
+    display: inline-flex;
+    font-size: 1.3em;
+   
+}
+
+.social-list-items {
+    margin: 5em 2em 0 2em;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.social-list-items a {
+    margin: 0 5px 0 5px;
+    padding: 12px;
+    display: inline;
+    border-color: rgba(77, 77, 77, 0.774);
+    background-origin: border-box;
+    border-style:solid ;
+    border-width: 2.5px;
+    border-radius: 50%;
+}
+
+.social-list-items a:hover {
+    color: rgba(116, 0, 170, 0.774); 
+    border-color: rgba(116, 0, 170, 0.774);
+    transition: ease-in 200ms;
+   
+}
+
+   
+.social-list-items h2 {
+    margin: 0 0 1.5em 0;
+    position: relative;
+    
+}
+
+
+
+    /*Media Queries*/
+
+  
+
+    @media all and (max-width:1024px) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+           display: none;
+         
+            
+        }
+        
+        #menu-button {
+           
+            font-size: 30px;
+            position: relative;
+            top: 6.5%;
+            left: 45%;
+            display: block;
+            color: white;
+            z-index: 3;
+            cursor: pointer;
+          
+        
+        }
+
+
+#mini-menu{
+    width: 100%;
+    height: 140vh;  
+    padding: 0;
+    display: none; 
+    position: relative;
+    bottom: 7em;
+    text-align: center;
+    z-index: 2;
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+    
+    
+    
+  }
+
+  .other-sites-mini {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 9em;
+    text-align: center;
+    
+  }
+
+  #mini-menu ul{
+
+    margin: 8em 0 0 0 ;
+}
+
+        #mini-menu li{
+            padding:5% 10% 5% 0;
+           
+        }
+        #header-img {
+    
+            position: relative;
+            top: -2em;
+            margin: 0em 0 1em 0;
+            width: 100vw;
+            max-height: 80vh;
+            opacity: .7;
+            
+        }
+
+        #title-h1 {
+            position: absolute;
+            top: 20%;
+           
+        }
+
+        /*CSS FOR OTHER PAGES START HERE*/
+
+#tv-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/jesman-fabio-1zwJqd5cNys-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#record-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/jesman-fabio-1zwJqd5cNys-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#ed-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/marc-fanelli-isla-xo4ValczbuA-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 110vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#ed-img-div {
+  display: flex;
+    flex-direction: inherit ;
+}
+
+.inside-info-text-ed-1 {
+    
+    width: inherit;
+    height: 22em;
+  
+    padding: 0 0em 2em 0em;
+  
+    background-image: url(/image/11374441_773031546176190_634272150_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+    
+  
+}
+
+#inside-info-text-ed-p1 {
+   visibility: hidden;
+   
+    
+}
+
+
+
+.inside-info-text-ed-2 {
+    
+    width: inherit;
+    height: 22em;
+    padding: 0 0em 2em 0em;
+    background-image: url(/image/71138886_562906007847717_6593147567894744673_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  
+}
+
+#inside-info-text-ed-p2 {
+    visibility: hidden;
+}
+
+
+.inside-info-text-ed-3 {
+    
+    width: inherit;
+    height: 22em;
+    padding: 0 0 2em 0;
+    background-image: url(/image/71198355_164284771311940_3645299418270562030_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  
+}
+
+#inside-info-text-ed-p3 {
+    visibility: hidden;
+}
+
+.inside-info-text-ed-1:hover{
+    width: inherit;
+    height: 22em;
+    padding: 0 0 2em 0;
+    }
+
+.inside-info-text-ed-2:hover{
+    width: inherit;
+    height: 22em;
+    padding: 0 0 2em 0;
+    }
+
+.inside-info-text-ed-3:hover{
+    width: inherit;
+    height: 22em;
+    padding: 0 0 2em 0;
+    
+    }
+
+#ed-img-div img{
+width: auto;
+height: 22em;
+padding: 0 1em 2em 1em;
+transition: ease-in 500ms;
+}
+#touring-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 90vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#ad-header-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image/aaron-sebastian-XWl8Pu3HrgY-unsplash.jpg);
+    background-attachment: scroll;
+    background-position-y: 90vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: overlay;
+
+}
+
+#educate-wrapper {
+    margin: 8em 3em 2em 3em;
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 2em;
+    line-height: 2em;
+}
+
+
+
+#educate-wrapper li {
+    
+   list-style: disc;
+  }
+
+  .vl {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    border-left: 2px solid rgba(116, 0, 170, 0.774);
+    width: 100%;
+  }
+        #arrow-down {
+   
+            display: none;
+            }
+
+        #profile-img {
+            margin: 4em 4em 0em 4em;
+            max-width: auto;
+            max-height: 25%;
+            border-radius: 10%;
+            box-shadow: 3px 3px 10px  rgba(37, 35, 35, 0.493);
+          
+        }
+
+
+        #profile-type {
+            margin: 1em 4em 2em 4em;
+            max-width: 35em;
+        }
+
+        footer {
+            width: 100%;
+            height: 330px;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            background-color: rgba(0, 0, 0, 0.935);
+            background-image: url(/image/neil-godding-NMbZ7QM3XWM-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+         
+        
+        }
+
+        .contact-list-items {
+            display: none;
+            
+        }
+
+    
+
+        .social-list-items a {
+            padding: .5em;
+            display: inline-flex;
+            color: rgba(116, 0, 170, 0.774);
+            border-color: rgba(116, 0, 170, 0.774); 
+            
+        }
+
+   
+     
+
+     
+
+        .social-list-items h2 {
+            display: none;
+            
+          
+        }
+        
+    }
+
+    @media all and (max-width:620px) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+           display: none;
+         
+            
+        }
+        
+        #menu-button {
+            font-size: 20px;
+            position: relative;
+            top: 30px;
+            left: 38%;
+            display: block;
+            color: white;
+            z-index: 5;
+          
+        }
+        #header-img {
+    
+            position: relative;
+            top: -2em;
+            margin: 0em 0 1em 0;
+            width: 100vw;
+            max-height: 80vh;
+            opacity: .7;
+            
+        }
+
+        #title-h1 {
+            font-size: large;
+            position: absolute;
+            top: 12%;
+           
+           
+        }
+
+        #arrow-down {
+   
+            display: none;
+            }
+
+        #profile-img {
+            margin: 1em 4em 0em 4em;
+            max-width: auto;
+            max-height: 15%;
+            border-radius: 10%;
+            box-shadow: 3px 3px 10px  rgba(37, 35, 35, 0.493);
+            display: none;
+          
+        }
+
+
+        #profile-type {
+            margin: 1em 4em 2em 4em;
+            max-width: 35em;
+        }
+
+        footer {
+            width: 100%;
+            height: 330px;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            background-color: rgba(0, 0, 0, 0.935);
+            background-image: url(/image/neil-godding-NMbZ7QM3XWM-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+         
+        
+        }
+
+        .contact-list-items {
+            display: none;
+            
+        }
+
+    
+
+        .social-list-items a {
+            padding: .5em;
+            margin: 1em 0em 3em 0em;
+            display: inline;
+            flex-direction: row;
+            color: rgba(116, 0, 170, 0.774);
+            border-color: rgba(116, 0, 170, 0.774); 
+            
+        }
+
+   
+     
+
+     
+
+        .social-list-items h2 {
+            display: none;
+            
+          
+        }
+        
+    }
